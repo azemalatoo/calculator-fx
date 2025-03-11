@@ -1,0 +1,48 @@
+/* calculator.css */
+
+.root {
+    -fx-background-color: #282c34; /* Dark background */
+    -fx-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.text-field {
+    -fx-background-color: #3e4451;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24px;
+    -fx-padding: 15px;
+    -fx-border-color: #5c6370;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-alignment: center-right;
+}
+
+.button {
+    -fx-background-color: #4a515d;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+    -fx-padding: 15px 20px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1); /* Subtle shadow */
+}
+
+.button:hover {
+    -fx-background-color: #5c6370;
+}
+
+.button:pressed {
+    -fx-background-color: #3e4451;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 2, 0.0, 0, 1); /* Reduced shadow on press */
+}
+
+.button.operator {
+    -fx-background-color: #61afef; /* Highlight operators */
+}
+
+.button.equals {
+    -fx-background-color: #98c379; /* Highlight equals */
+}
+
+.button.clear {
+    -fx-background-color: #e06c75; /* Highlight clear */
+}
